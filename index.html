@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Speaker Registration</h1>
+    <p>Want to speak at our fake conference? Register here!</p><hr>
+    <form action="">
+        <div>
+            <label for="fullName">Full Name</label>
+            <input type="text" placeholder="Full Name" name="fullName" id="fullName">
+        </div>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" required placeholder="Email Address" name="email" id="email">
+        </div>
+        <div>
+            <label for="talkType1">Main Stage</label>
+            <input type="radio" checked name="talkType" id="talkType1">
+            <label for="talkType2">Workshop</label>
+            <input type="radio" name="talkType" id="talkType2">
+        </div>
+        <div>
+            <label for="tShirt">T-Shirt Size</label>
+            <select name="tShirt" id="tShirt">
+                <option value="xs">X Small</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option selected value="l">Large</option>
+                <option value="xl">Extra Large</option>
+                <option value="xxl">2XL Large</option>
+            </select>
+        </div>
+        <div>
+            <label for="abstract">Abstract</label>
+            <textarea placeholder="Describe your talk in 200 words or less" name="abstract" id="abstract"></textarea>
+        </div>
+        <div>
+            <button>Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
